@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#102b3b">
+  <title>VELOR — Built for the cold</title>
+  <meta name="description" content="VELOR — Outerwear técnico e streetwear para quem vai além.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">FREE SHIPPING ON ORDERS OVER R$ 499 <span>—</span> NOVA COLEÇÃO 01</div>
+  <header class="topbar">
+    <a class="wordmark" href="#">VELOR<span>®</span></a>
+    <nav>
+      <a href="#colecao">COLEÇÃO</a><a href="#manifesto">MANIFESTO</a><a href="#sobre">SOBRE</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" aria-label="Abrir carrinho" id="openCart"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg><span class="cart-count" id="cartCount">0</span></button>
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-topline"><span>VLR / 001</span><span>TECHNICAL OUTERWEAR — 2026</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow">THE ART OF EXTREME COMFORT</p>
+        <h1>BUILT FOR<br><em>THE COLD.</em></h1>
+        <p class="hero-desc">Design que desafia o clima.<br>Estilo que não conhece limites.</p>
+        <a class="round-link" href="#colecao"><span>EXPLORE<br>COLLECTION</span><b>↗</b></a>
+      </div>
+      <div class="hero-product"><span>01 / 04</span><strong>ARTIC<br>PUFFER</strong><small>R$ 899,90</small></div>
+      <div class="hero-vertical">VELOR — BEYOND THE ELEMENTS</div>
+      <div class="hero-bottom"><span>DESIGNED TO ENDURE</span><span>SCROLL TO DISCOVER ↓</span></div>
+    </section>
+
+    <section class="ticker"><div>VELOR® &nbsp; BUILT FOR THE COLD &nbsp; VELOR® &nbsp; BUILT FOR THE COLD &nbsp; VELOR® &nbsp; BUILT FOR THE COLD &nbsp;</div></section>
+
+    <section class="collection section-wrap" id="colecao">
+      <div class="section-heading">
+        <div><p class="eyebrow">DROP 001 / 2026</p><h2>NEW<br><em>COLLECTION</em></h2></div>
+        <p class="section-note">Peças essenciais. Construídas para<br>performance, feitas para presença.</p>
+        <button class="filter-btn" id="filterBtn">ALL PRODUCTS <span>＋</span></button>
+      </div>
+      <div class="featured-grid">
+        <article class="campaign-card">
+          <img src="https://images.unsplash.com/photo-1517299321609-52687d1bc55a?auto=format&fit=crop&w=1100&q=85" alt="Paisagem de montanhas nevadas">
+          <div class="campaign-overlay"><span>CAMPAIGN / 001</span><h3>FIND YOUR<br>OWN ALTITUDE.</h3><a href="#manifesto">DISCOVER THE STORY ↗</a></div>
+        </article>
+        <div class="products-grid" id="productsGrid"></div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="manifesto">
+      <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=90" alt="Montanhas cobertas de neve">
+      <div class="manifesto-grain"></div>
+      <div class="manifesto-top"><span>VELOR® / OUR PHILOSOPHY</span><span>01 — 03</span></div>
+      <div class="manifesto-content"><p class="eyebrow">NO LIMITS. NO COMPROMISE.</p><h2>BUILT FOR COLD<br>MADE FOR HEIGHT<br><em>FORGED TO LAST.</em></h2></div>
+      <p class="manifesto-side">GO BEYOND<br>THE EXPECTED.</p>
+      <div class="manifesto-bottom"><span>ENGINEERED FOR THE ELEMENTS</span><span>VELOR® — 2026</span></div>
+    </section>
+
+    <section class="about section-wrap" id="sobre">
+      <p class="eyebrow">A DIFFERENT POINT OF VIEW</p>
+      <h2>MOVE THROUGH<br>THE WORLD <em>YOUR WAY.</em></h2>
+      <p>Uma nova leitura do vestuário urbano. Silhuetas marcantes, materiais selecionados e uma atitude feita para ir além.</p>
+      <a href="#colecao" class="text-link">EXPLORE VELOR <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="wordmark" href="#">VELOR<span>®</span></a><span>BUILT FOR THE ELEMENTS.</span><span>© 2026 VELOR STUDIO</span></footer>
+
+  <div class="drawer-backdrop" id="backdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+    <div class="drawer-head"><div><p class="eyebrow">YOUR SELECTION</p><h2>YOUR BAG <span id="drawerCount">(0)</span></h2></div><button class="close-btn" id="closeCart" aria-label="Fechar">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart">Seu carrinho está vazio.<br><span>Escolha suas peças favoritas.</span></div></div>
+    <div class="cart-footer">
+      <div class="subtotal"><span>SUBTOTAL</span><strong id="subtotal">R$ 0,00</strong></div>
+      <p class="shipping-note">Frete calculado após informar o endereço.</p>
+      <button class="checkout-btn" id="goCheckout">CONTINUAR PARA ENTREGA <span>↗</span></button>
+    </div>
+  </aside>
+
+  <div class="checkout-modal" id="checkoutModal">
+    <div class="checkout-panel">
+      <button class="close-btn modal-close" id="closeCheckout">×</button>
+      <p class="eyebrow">FINAL STEP / DELIVERY</p><h2>ONDE VAMOS<br><em>ENTREGAR?</em></h2>
+      <form id="addressForm">
+        <label>Nome completo<input required name="name" autocomplete="name" placeholder="Seu nome"></label>
+        <div class="form-row"><label>CEP<input required name="cep" inputmode="numeric" placeholder="00000-000"></label><label>Estado<input required name="state" maxlength="2" placeholder="UF"></label></div>
+        <div class="form-row"><label>Cidade<input required name="city" autocomplete="address-level2" placeholder="Cidade"></label><label>Bairro<input required name="district" placeholder="Bairro"></label></div>
+        <label>Rua / Avenida<input required name="street" autocomplete="street-address" placeholder="Nome da rua"></label>
+        <div class="form-row"><label>Número<input required name="number" placeholder="Nº"></label><label>Complemento <small>(opcional)</small><input name="complement" placeholder="Apto, bloco..."></label></div>
+        <div class="checkout-summary"><span>ITENS NO PEDIDO</span><strong id="checkoutTotal">R$ 0,00</strong></div>
+        <button class="checkout-btn" type="submit">SALVAR ENDEREÇO E REVISAR PEDIDO ↗</button>
+      </form>
+      <div class="notice" id="orderNotice" hidden>Endereço salvo neste dispositivo. O WhatsApp da loja ainda não foi configurado; quando você tiver o número, podemos ativar o envio do pedido.</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
